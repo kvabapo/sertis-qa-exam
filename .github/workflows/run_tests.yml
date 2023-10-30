@@ -28,7 +28,7 @@ jobs:
       - name: Upgrade package manager
         run: pip install --upgrade pip
       - name: Install dependencies
-        run: pip install requirements.txt -r  
+        run: pip install -r requirements.txt
       - name: Run pytest
         uses: pavelzw/pytest-action@v2
         with:
