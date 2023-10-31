@@ -7,7 +7,7 @@ Make sure `Python 3.X` is installed
 
 ## Getting started
 
-1. Clone repository and `pip install`
+1. Clone repository and `pip install requirements.txt`
 2. Check successful install `pip list`
 
 ## Run tests

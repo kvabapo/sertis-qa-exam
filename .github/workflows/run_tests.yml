@@ -14,19 +14,21 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.11,3.12"]
+        python-version: ["3.12.0"]
 
     steps:
       - uses: szenius/set-timezone@v1.2
         with:
-          timezoneLinux: "Asia/Thailand"
+          timezoneLinux: "Asia/Bangkok"
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Upgrade package manager
+        run: pip install --upgrade pip
       - name: Install dependencies
-        run: pip install requirements.txt && pytest-md && pytest-emoji
+        run: pip install -r requirements.txt
       - name: Run pytest
         uses: pavelzw/pytest-action@v2
         with:
