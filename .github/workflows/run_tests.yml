@@ -29,6 +29,8 @@ jobs:
         run: pip install --upgrade pip
       - name: Install dependencies
         run: pip install -r requirements.txt
+      - name: Install playwright dependencies
+        run: playwright install-deps
       - name: Run pytest
         uses: pavelzw/pytest-action@v2
         with:
