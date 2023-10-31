@@ -18,4 +18,4 @@ Make sure `Python 3.X` is installed
 ## Run Github Actions
 1. Go to <a href ="https://github.com/kvabapo/sertis-qa-exam/actions/workflows/run_tests.yml"> Actions </a>
 2. Select branch `main`
-3. Click Runw workflow button
+3. Click Run workflow button
