@@ -10,7 +10,12 @@ Make sure `Python 3.X` is installed
 1. Clone repository and `pip install requirements.txt`
 2. Check successful install `pip list`
 
-## Run tests
+## Run tests locally
 1. Go to `/tests`
 2. On command line type `pytest`
 3. It should run browser and api tests then display test results
+
+## Run Github Actions
+1. Go to <a href ="https://github.com/kvabapo/sertis-qa-exam/actions/workflows/run_tests.yml"> Actions </a>
+2. Select branch `main`
+3. Click Runw workflow button
