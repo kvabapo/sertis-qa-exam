@@ -1,5 +1,5 @@
 
-from helper import *
+from helper import get_user_by_id
 
 
 def test_get_user_by_id():
