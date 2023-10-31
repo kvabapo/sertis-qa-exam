@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Automated Tests
 on:
   workflow_dispatch:
   pull_request:
