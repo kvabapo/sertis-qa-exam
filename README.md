@@ -16,6 +16,6 @@ Make sure `Python 3.X` is installed
 3. It should run browser and api tests then display test results
 
 ## Run Github Actions
-1. Go to <a href ="https://github.com/kvabapo/sertis-qa-exam/actions/workflows/run_tests.yml"> Actions </a>
+1. Go to <a href ="https://github.com/kvabapo/sertis-qa-exam/actions/workflows/main.yml"> Actions </a>
 2. Select branch `main`
 3. Click Run workflow button
