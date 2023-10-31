@@ -1,5 +1,5 @@
 
-from helper import *
+from helper import get_list_of_users
 
 
 def test_get_list_of_users():

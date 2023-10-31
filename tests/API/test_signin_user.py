@@ -1,5 +1,5 @@
 
-from helper import *
+from helper import sign_in_user
 
 
 def test_sign_in_successful():
