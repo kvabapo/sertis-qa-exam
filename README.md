@@ -1,5 +1,5 @@
 # sertis-qa-exam
-UI and API automated tests
+UI ([playwright](https://playwright.dev/python/)) and API ([requests](https://requests.readthedocs.io/en/latest/)) automated tests
 
 This repository is about end to end testing. <a href ="https://docs.pytest.org/en/7.4.x/"> Pytest </a> is the testing framework used.
 
