@@ -47,7 +47,7 @@ def test_success_purchase_of_a_product(page: Page):
     page.fill("#card", "123456")
     page.fill("#month", "10")
     page.fill("#year", "2025")
-    
+
     # Purchase button
     page.click(
         "#orderModal > div > div > div.modal-footer > button.btn.btn-primary")
@@ -91,7 +91,7 @@ def test_purchase_a_product_empty_cart(page: Page):
     page.click(
         "#orderModal > div > div > div.modal-footer > button.btn.btn-primary")
 
-    # Error Message (This should fail but I comment it out)
+    # >> Error Message (This step should fail but I comment it out to see script is working)
     # expect(page.locator("#errormsg")).to_have_text("user can't purchase when cart is empty")
 
 
@@ -110,5 +110,6 @@ def test_input_validation_purchase_form(page: Page):
         "#orderModal > div > div > div.modal-footer > button.btn.btn-primary")
 
     # Error Message
-    page.on("dialog", lambda dialog: expect(dialog.message).to_contain_text("Please fill out Name and Creditcard."))
+    page.on("dialog", lambda dialog: expect(dialog.message).to_contain_text(
+        "Please fill out Name and Creditcard."))
     page.on("dialog", lambda dialog: dialog.accept())
