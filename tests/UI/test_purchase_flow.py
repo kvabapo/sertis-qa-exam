@@ -47,6 +47,7 @@ def test_success_purchase_of_a_product(page: Page):
     page.fill("#card", "123456")
     page.fill("#month", "10")
     page.fill("#year", "2025")
+    
     # Purchase button
     page.click(
         "#orderModal > div > div > div.modal-footer > button.btn.btn-primary")
@@ -103,10 +104,11 @@ def test_input_validation_purchase_form(page: Page):
 
     # Order Form
     page.wait_for_selector("#orderModalLabel")
+
     # Purchase button
     page.click(
         "#orderModal > div > div > div.modal-footer > button.btn.btn-primary")
 
     # Error Message
-    page.on("dialog", lambda dialog: print(dialog.message))
+    page.on("dialog", lambda dialog: expect(dialog.message).to_contain_text("Please fill out Name and Creditcard."))
     page.on("dialog", lambda dialog: dialog.accept())
